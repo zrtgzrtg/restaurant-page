@@ -8,7 +8,7 @@ import data from "./cocktails.json"
 class indexClass{
 contentDiv = document.querySelector("#content")
 nav = document.querySelector("nav")
-currentTab = "menu"
+currentTab = "home"
     init() {
         this.#addListeners()
         this.#updateTab()
