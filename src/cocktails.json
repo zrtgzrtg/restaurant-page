@@ -1,0 +1,53 @@
+{
+  "cocktails": [
+    {
+      "name": "Mojito",
+      "ingredients": [
+        "50ml White Rum",
+        "Soda Water",
+        "10 Fresh Mint Leaves",
+        "2 tsp Sugar",
+        "25ml Lime Juice",
+        "Ice Cubes"
+      ],
+      "description": "A refreshing, minty, and slightly sweet cocktail with a hint of citrus.",
+      "price": "$10"
+    },
+    {
+      "name": "Margarita",
+      "ingredients": [
+        "50ml Tequila",
+        "25ml Lime Juice",
+        "15ml Triple Sec",
+        "Salt",
+        "Ice Cubes"
+      ],
+      "description": "A tangy and bold cocktail with a perfect balance of tequila, lime, and orange flavors.",
+      "price": "$12"
+    },
+    {
+      "name": "Old Fashioned",
+      "ingredients": [
+        "60ml Bourbon",
+        "1 Sugar Cube",
+        "2 dashes Angostura Bitters",
+        "Orange Peel",
+        "Ice Cubes"
+      ],
+      "description": "A smooth, strong, and slightly sweet whiskey-forward drink with hints of orange and bitters.",
+      "price": "$14"
+    },
+    {
+      "name": "Cosmopolitan",
+      "ingredients": [
+        "45ml Vodka",
+        "15ml Triple Sec",
+        "30ml Cranberry Juice",
+        "10ml Lime Juice",
+        "Ice Cubes"
+      ],
+      "description": "A tart and fruity cocktail with a blend of citrus and cranberry flavors.",
+      "price": "$11"
+    }
+  ]
+}

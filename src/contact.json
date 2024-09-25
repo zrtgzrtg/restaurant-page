@@ -1,0 +1,10 @@
+
+{
+"contactInformation": [
+	{
+		"phone": "123-456-7890",
+		"email": "example@gmail.com",
+		"address": "123 Example St, random City"
+	}
+]
+}

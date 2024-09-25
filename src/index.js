@@ -3,14 +3,16 @@ import "./style.css"
 import { loadPageHome } from "./home"
 import { loadPageAbout } from "./about"
 import { loadPageMenu } from "./menu"
+import data from "./cocktails.json"
 
 class indexClass{
 contentDiv = document.querySelector("#content")
 nav = document.querySelector("nav")
-currentTab = "home"
+currentTab = "menu"
     init() {
         this.#addListeners()
         this.#updateTab()
+        console.log(data)
     }
     #addListeners() {
         this.nav.addEventListener("click", (event)=> {

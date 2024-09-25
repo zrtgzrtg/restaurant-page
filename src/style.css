@@ -2,12 +2,19 @@
 :root {
     --header-background: orange;
     --button-background: lightblue;
+    --content-background: lightgrey;
+    --container-width: 80vw;
+    --container-height: 100vh;
+    --container-background: white;
 }
 body {
     margin: 0;
     padding: 0;
     font-size: 1.5rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#content {
+    background-color: var(--content-background);
 }
 header {
     padding: 1vh;
@@ -16,6 +23,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Bottom shadow */
 }
 nav {
     display: flex;
@@ -35,6 +43,128 @@ nav > button {
 }
 #content {
     display: flex;
-    margin-top: 2vh;
     justify-content: center;
 }
+.container-home {
+    background-color: var(--container-background);
+    width: var(--container-width);
+    height: var(--container-height);
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    box-shadow: 
+      -10px 0 15px rgba(0, 0, 0, 0.2), /* Left shadow */
+      10px 0 15px rgba(0, 0, 0, 0.2);  /* Right shadow */
+}
+.container-home > img {
+    display: block;
+    max-height: 80vh;
+    grid-row: 2;
+}
+.container-home > div {
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin: 1vh;
+}
+.container-home > div > button {
+    grid-row: 2;
+    border: none;
+    width: 10vw;
+    height: 4vh;
+    background-color: var(--button-background);
+    border-radius: 20px;
+    font-size: 2rem;
+}
+.container-home > div > div {
+    grid-row: 1;
+}
+.container-menu {
+    width: var(--container-width);
+    height: var(--container-height);
+    background-color: var(--container-background);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-shadow: 
+      -10px 0 15px rgba(0, 0, 0, 0.2), /* Left shadow */
+      10px 0 15px rgba(0, 0, 0, 0.2);  /* Right shadow */
+
+}
+.container-menu > div {
+    margin: 2vh;
+    border-radius: 50px;
+    border: 3px solid black;
+    padding: 2rem;
+    width: 35vw;
+    height: 25vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 2vh;
+}
+.container-menu > div:hover {
+    border: 3px solid green;
+    outline-offset: 10px solid blue;
+}
+.container-menu >div> .cocktail-name {
+    grid-row: 1;
+    grid-column: 1;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.container-menu >div> .cocktail-price {
+    grid-row: 2;
+    grid-column: 1;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.container-menu > div >ul {
+    grid-row: 2;
+    grid-column: 2;
+    list-style-type: circle;
+    padding: 0;
+    margin: 0;
+    max-height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5vw;
+    row-gap: 0.5vh;
+    align-self: start;
+}
+.container-menu > div > .cocktail-description {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+
+}
+.container-about {
+    width: var(--container-width);
+    height: var(--container-height);
+    background-color: var(--container-background);
+    box-shadow: 
+      -10px 0 15px rgba(0, 0, 0, 0.2), /* Left shadow */
+      10px 0 15px rgba(0, 0, 0, 0.2);  /* Right shadow */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 2vh;
+}
+.container-about > .contact-title {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+.container-about > ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1vh;
+    text-align: center;
+    padding: 0;
+}
+
